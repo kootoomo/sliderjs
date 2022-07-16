@@ -1,0 +1,100 @@
+body {
+    background-color: grey;
+}
+h1 {
+    text-align: center;
+    color: rgb(254, 208, 216);
+}
+h1:hover {
+    color: rgb(255, 141, 160);
+}
+.slider {
+    width: 500px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+}
+.slider__container {
+    width: 100%;
+    height: 100%;
+}
+.slider__image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 0.3rem;
+    box-shadow: rgb(23, 16, 51) 1.95px 1.95px 2.6px;
+}
+.slider__nav {
+    cursor: pointer;
+}
+.slider__nav-left,
+.slider__nav-right {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 0.5rem;
+    margin-top: -22px;
+    color: rgb(254, 208, 216);
+    font-weight: bold;
+    font-size: 2rem;
+    border: 0;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgb(203, 201, 201, 0);
+}
+.slider__nav-right {
+    right: 0;
+    border-radius: 3px 0 0 3px
+}
+.slider__nav-left {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+.slider__nav-left:hover,
+.slider__nav-right:hover {
+    background-color: rgb(147, 206, 255, 0);
+    color: rgb(255, 141, 160);
+}
+.slider__controls {
+    padding-top: 1rem;
+    text-align: center;
+}
+.slider__dots {
+    /* margin-bottom: 0.6rem; */
+    padding: 1rem 0;
+    text-align: center;
+}
+.slider__dot  {
+    cursor: pointer;
+    margin: 0 0.2rem;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: rgb(254, 208, 216);
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+.slider__dot.active,
+.slider__dot:hover {
+    background-color: rgb(255, 141, 160);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+@media (min-width: 300px) {
+    .slider {
+        width: 450px;
+        height: 250px;
+    }
+}
