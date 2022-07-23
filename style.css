@@ -93,8 +93,14 @@ h1:hover {
   }
 
 @media (min-width: 300px) {
-    .slider {
+	    .slider {
         width: 450px;
         height: 250px;
     }
+	.slider__image {
+    width: 98%;
+	}
+	.slider__nav-right {
+    right: 10px;
+	}
 }

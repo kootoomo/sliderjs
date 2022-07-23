@@ -2,7 +2,7 @@ const img = document.querySelector('.slider__image');
 
 const dots = document.querySelectorAll(".slider__dot");
 
-const imgArr = ['/img/iglu.jpg', '/img/palms.jpg', '/img/sands.jpg'];
+const imgArr = ['/sliderjs/img/iglu.jpg', '/sliderjs/img/palms.jpg', '/sliderjs/img/sands.jpg'];
 
 let currentIndex = 0;
 
